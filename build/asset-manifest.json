@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d7bdece8.css",
+    "main.js": "/static/js/main.ded73d43.js",
+    "static/media/hero-dishes.jpg": "/static/media/hero-dishes.2857e2fea8685fe1005e.jpg",
+    "static/media/kitchen-team-a.jpg": "/static/media/kitchen-team-a.88152ec38aa5ee2fd37e.jpg",
+    "static/media/salad-plate.jpg": "/static/media/salad-plate.518a8753b6be54f1e644.jpg",
+    "static/media/kitchen-team-b.jpg": "/static/media/kitchen-team-b.7cb8ee9fd7570a62dfb5.jpg",
+    "static/media/toasts-plate.jpg": "/static/media/toasts-plate.4b8b6bc6dba55ed49290.jpg",
+    "static/media/citrus-dessert.jpg": "/static/media/citrus-dessert.76f899ef888123a9f775.jpg",
+    "index.html": "/index.html",
+    "main.d7bdece8.css.map": "/static/css/main.d7bdece8.css.map",
+    "main.ded73d43.js.map": "/static/js/main.ded73d43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7bdece8.css",
+    "static/js/main.ded73d43.js"
+  ]
+}

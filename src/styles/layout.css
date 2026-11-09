@@ -1,0 +1,151 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.site-header {
+  background: var(--green);
+  color: #ffffff;
+}
+
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.brand__name {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+.brand__city {
+  font-size: 1rem;
+}
+
+.nav-toggle {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--yellow-soft);
+  border-radius: 8px;
+  background: transparent;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.nav-list.is-open {
+  display: block;
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.6rem 0;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a[aria-current="page"] {
+  color: var(--yellow-soft);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.site-footer {
+  background: var(--green-dark);
+  color: #ffffff;
+}
+
+.site-footer a {
+  color: #ffffff;
+}
+
+.site-footer h2,
+.site-footer h3 {
+  color: var(--yellow-soft);
+}
+
+.site-footer__inner {
+  display: grid;
+  gap: 2rem;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 1.5rem;
+}
+
+.site-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer li {
+  margin-bottom: 0.35rem;
+}
+
+.site-footer address {
+  margin-bottom: 1em;
+  font-style: normal;
+}
+
+.site-footer__credit {
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 600px) {
+  .site-footer__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-list,
+  .nav-list.is-open {
+    display: flex;
+    gap: 1.75rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 900px) {
+  .site-footer__inner {
+    grid-template-columns: 1.3fr 1fr 1.3fr;
+  }
+}

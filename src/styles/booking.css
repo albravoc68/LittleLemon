@@ -1,0 +1,119 @@
+.page {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3.5rem;
+}
+
+.page--narrow {
+  max-width: 640px;
+}
+
+.page h1 {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  color: var(--green);
+}
+
+.page__intro {
+  color: var(--muted);
+}
+
+.booking-form {
+  display: grid;
+  gap: 1.1rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #f7f7f4;
+  border: 1px solid #d8dbd9;
+  border-radius: var(--radius);
+}
+
+.form-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #6f7a75;
+  border-radius: 8px;
+  background: #ffffff;
+  font: inherit;
+  color: var(--text);
+}
+
+.form-field select:disabled {
+  background: #e4e6e5;
+  cursor: not-allowed;
+}
+
+.form-field [aria-invalid="true"] {
+  border: 2px solid var(--error);
+}
+
+.field-hint,
+.field-error {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+}
+
+.field-hint {
+  color: var(--muted);
+}
+
+.field-error,
+.form-alert {
+  color: var(--error);
+  font-weight: 600;
+}
+
+.form-alert {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background: #fdecee;
+  border-left: 4px solid var(--error);
+  border-radius: 4px;
+}
+
+.booking-form .button {
+  justify-self: start;
+}
+
+.summary {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background: #f7f7f4;
+  border: 1px solid #d8dbd9;
+  border-radius: var(--radius);
+}
+
+.summary div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #d8dbd9;
+}
+
+.summary div:last-child {
+  border-bottom: 0;
+}
+
+.summary dt {
+  color: var(--muted);
+}
+
+.summary dd {
+  margin: 0;
+  font-weight: 700;
+}
